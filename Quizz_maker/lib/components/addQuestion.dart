@@ -93,7 +93,62 @@ class _AddQuestionState extends State<AddQuestion> {
                 ),
                 SizedBox(height: 10,),
       
-               
+                TextFormField(
+                        validator: (val){return val!.isEmpty? "Enter Option3" : null;},
+                         decoration: InputDecoration(
+                           hintText: "Enter Option3"
+                         ),
+                         onChanged: (val) {
+                            option3=val;
+                         },
+                ),
+                SizedBox(height: 10,),
+                  TextFormField(
+                        validator: (val){return val!.isEmpty? "Enter  Option4" : null;},
+                         decoration: InputDecoration(
+                           hintText: "Enter Option4"
+                         ),
+                         onChanged: (val) {
+                            option4=val;
+                         },
+                ),
+                Spacer(),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  OutlinedButton(
+                       style: OutlinedButton.styleFrom(
+                       backgroundColor: Colors.blue, //<-- SEE HERE
+        ),
+                    onPressed: () {
+                    Navigator.pop(context);
+                    },
+                    
+                    child: SizedBox(
+                      height: 20,
+                    
+                      width: MediaQuery.of(context).size.width * 0.3,
+                      child: Text("Submit",style: TextStyle(color: Colors.white,fontSize: 15, ),textAlign: TextAlign.center,),
+                    ),
+                  ),
+                  SizedBox(width: 30,),
+                  OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                     backgroundColor: Colors.blue, //<-- SEE HERE
+        ),
+                    onPressed: () {
+                  upLoadQuestiondata();
+                    },
+                    
+                    child: SizedBox(
+                      height: 20,
+                        width: MediaQuery.of(context).size.width * 0.3,
+                        child: Text("Add Question",style: TextStyle(color: Colors.white,fontSize: 15),textAlign: TextAlign.center,),
+                  ),),
+                ],
+                ),
+                SizedBox(height: 50,)
+          ]),
           
         ),
       ),
