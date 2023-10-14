@@ -1,5 +1,6 @@
 import 'package:application1/Services/auth.dart';
 import 'package:application1/components/home.dart';
+import 'package:application1/components/signup.dart';
 import 'package:application1/helper/function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -131,7 +132,12 @@ class _SigninState extends State<Signin> {
                                     style: TextStyle(fontSize: 12),
                                   ),
                                   GestureDetector(
-                                      child: Text(
+                                    onTap: (){
+                                   Navigator.pushReplacement(context, MaterialPageRoute(
+                                     builder: (context)=> Signup()
+                                   ));
+                                 },
+                                    child: Text(
                                     "Sign up",
                                     style: TextStyle(
                                         fontSize: 14,

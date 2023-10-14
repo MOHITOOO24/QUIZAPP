@@ -1,6 +1,6 @@
 import 'package:application1/Services/database.dart';
-//import 'package:application1/Supporting%20files/title.dart';
-//import 'package:application1/components/addQuestion.dart';
+import 'package:application1/Supporting_files/title.dart';
+import 'package:application1/components/addQuestion.dart';
 import 'package:flutter/material.dart';
 import 'package:random_string/random_string.dart';
 
@@ -49,7 +49,7 @@ class _CreateQuizzState extends State<CreateQuizz> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        //title: appBar(context),
+        title: appBar(context),
         iconTheme: IconThemeData(color: Colors.black45),
       ),
       body: _isloading
