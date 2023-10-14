@@ -131,6 +131,11 @@ class _SigninState extends State<Signin> {
                                     style: TextStyle(fontSize: 12),
                                   ),
                                   GestureDetector(
+                                     onTap: (){
+                                   Navigator.pushReplacement(context, MaterialPageRoute(
+                                     builder: (context)=> Signup()
+                                   ));
+                                 },
                                       child: Text(
                                     "Sign up",
                                     style: TextStyle(
