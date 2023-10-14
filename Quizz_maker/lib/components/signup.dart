@@ -4,7 +4,7 @@ import 'package:application1/helper/function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:application1/components/signin.dart';
-// import '../Supporting files/title.dart';
+import 'package:application1/Supporting_files/title.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
@@ -112,14 +112,14 @@ class _SignupState extends State<Signup> {
                               child: Container(
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
-                                    color: Colors.yellow,
+                                    color: const Color.fromARGB(255, 59, 180, 255),
                                     borderRadius: BorderRadius.circular(30)),
                                 height: 50,
                                 width: MediaQuery.of(context).size.width,
                                 child: Text(
                                   "Sign up ",
                                   style: TextStyle(
-                                      color: Colors.grey, fontSize: 15),
+                                      color: Colors.white, fontSize: 15),
                                 ),
                               ),
                             ),
