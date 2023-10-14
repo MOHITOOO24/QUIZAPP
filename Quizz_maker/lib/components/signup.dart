@@ -44,7 +44,7 @@ class _SignupState extends State<Signup> {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         centerTitle: true,
-        // title: appBar(context),
+        title: appBar(context),
         backgroundColor: Colors.blueAccent,
         elevation: 0.0,
         systemOverlayStyle: SystemUiOverlayStyle.light,
