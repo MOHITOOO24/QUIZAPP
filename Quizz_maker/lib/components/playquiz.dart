@@ -1,11 +1,12 @@
 import 'package:application1/Services/database.dart';
-import 'package:application1/Supporting%20files/quizplaywiddget.dart';
+import 'package:application1/Supporting_files/quizplaywiddget.dart';
+import 'package:application1/Supporting_files/title.dart';
 import 'package:application1/components/results.dart';
 import 'package:application1/models/Questionmodel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../Supporting files/title.dart';
+
 
 
 class playQuiz extends StatefulWidget {
