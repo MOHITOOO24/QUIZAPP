@@ -89,16 +89,3 @@ If you'd like to contribute to the Quiz Maker App, please follow these guideline
 
 5. Your pull request will be reviewed by the project maintainers.
 
-## License
-
-This Quiz Maker App is open-source and available under the [MIT License](LICENSE). You are free to use and modify the app according to your needs.
-
-## Contact
-
-If you have any questions or suggestions, feel free to contact us at [your-email@example.com](mailto:your-email@example.com).
-
-Thank you for using the Quiz Maker App!
-
----
-
-You can tailor this README content to your specific app and project details. Make sure to provide clear and concise instructions for users on how to install and use your app.
